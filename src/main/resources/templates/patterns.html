@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Patterns</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" 
+              integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"/>
+    </head>
+    <body>
+        <div class="container-fluid text-bg-secondary">
+            <div class="row border-bottom">
+                <div class="col-sm-12" align="center">
+                    <h1><strong>PATTERNS</strong></h1>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-sm-12 border-top border-bottom" align="center">
+                    <p class="fs-1">Patterns são padrões que você pode fazer em seu cubo, sempre partindo dele montado, claro.</p>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-sm-3 border border-info rounded border-opacity-50" align="center">
+                    <img th:src="@{/imagens/xadrez.webp}"/>
+                    <h3>Xadrez</h3>
+                    <hr/>
+                    <p>U2 D2 F2 B2 L2 R2</p>
+                </div>
+                <div class="col-sm-3 border border-info rounded border-opacity-50" align="center">
+                    <img th:src="@{/imagens/linhas.webp}"/>
+                    <h3>Linhas Verticais</h3>
+                    <hr/>
+                    <p>F U F R L2 B D' R D2 L D' B R2 L F U F</p>
+                </div>
+                <div class="col-sm-3 border border-info rounded border-opacity-50" align="center">
+                    <img th:src="@{/imagens/tetris.webp}"/>
+                    <h3>Tetris</h3>
+                    <hr/>
+                    <p>L R F B U' D' L' R'</p>
+                </div>
+                <div class="col-sm-3 border border-info rounded border-opacity-50" align="center">
+                    <img th:src="@{/imagens/cuboCubo.webp}"/>
+                    <h3>Cubo no Cubo</h3>
+                    <hr/>
+                    <p> F L F U' R U F2 L2 U' L' B D' B' L2 U</p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-sm-3 border border-info rounded border-opacity-50" align="center">
+                    <img th:src="@{/imagens/caixaPresente.webp}"/>
+                    <h3>Caixa de Presentes</h3>
+                    <hr/>
+                    <p>U B2 R2 B2 L2 F2 R2 D' F2 L2 B F' L F2 D U' R2 F' L' R'</p>
+                </div>
+                <div class="col-sm-3 border border-info rounded border-opacity-50" align="center">
+                    <img th:src="@{/imagens/anaconda.webp}"/>
+                    <h3>Anaconda</h3>
+                    <hr/>
+                    <p>L U B' U' R L' B R' F B' D R D' F'</p>
+                </div>
+                <div class="col-sm-3 border border-info rounded border-opacity-50" align="center">
+                    <img th:src="@{/imagens/cuboCuboCubo.webp}"/>
+                    <h3>Cubo no Cubo no Cubo</h3>
+                    <hr/>
+                    <p>U' L' U' F' R2 B' R F U B2 U B' L U' F U R F'</p>
+                </div>
+                <div class="col-sm-3 border border-info rounded border-opacity-50" align="center">
+                    <img th:src="@{/imagens/6Centros.webp}"/>
+                    <h3>6 Centros</h3>
+                    <hr/>
+                    <p>U D' R L' F B' U D'</p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-sm-3 border border-info rounded border-opacity-50" align="center">
+                    <img th:src="@{/imagens/torre.webp}"/>
+                    <h3>Torre</h3>
+                    <hr/>
+                    <p>L2 B2 D' B2 D L2 U R2 D R2 B U R' F2 R U' B' U'</p>
+                </div>
+                <div class="col-sm-3 border border-info rounded border-opacity-50" align="center">
+                    <img th:src="@{/imagens/espiral.webp}"/>
+                    <h3>Espiral</h3>
+                    <hr/>
+                    <p>L' B' D U R U' R' D2 R2 D L D' L' R' F U</p>
+                </div>
+                <div class="col-sm-3 border border-info rounded border-opacity-50" align="center">
+                    <img th:src="@{/imagens/4Centros.webp}"/>
+                    <h3>4 Centros</h3>
+                    <hr/>
+                    <p>F2 B2 U D' R2 L2 U D'</p>
+                </div>
+                <div class="col-sm-3 border border-info rounded border-opacity-50" align="center">
+                    <img th:src="@{/imagens/twister.webp}"/>
+                    <h3>Twister</h3>
+                    <hr/>
+                    <p>F R' U L F' L' F U' R U L' U' L F'</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <div class="col-sm-12">
+                    <a th:href="@{/pagina-principal}"><button type="submit" class="btn btn-dark mb-2"
+                    th:href="@{/pagina-principal}">Voltar</button></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

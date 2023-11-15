@@ -14,4 +14,9 @@ public class CuboController {
     public String exibeMovimentos() {
         return "movimentos";
     }
+    
+    @GetMapping("/patterns")
+    public String exibePatterns() {
+        return "patterns";
+    }
 }
