@@ -23,4 +23,9 @@ public class CuboController {
     public String exibePecasCubo() {
         return "pecasCubo";
     }
+    
+    @GetMapping("metodo-basico")
+    public String exibeMetodo() {
+        return "metodoBasico";
+    }
 }

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Método básico</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" 
+              integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"/>
+    </head>
+    <body>
+        <div class="container-fluid text-bg-secondary">
+            <div class="row border-bottom">
+                <div class="col-sm-12" align="center">
+                    <h1><strong>MÉTODO BÁSICO</strong></h1>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row mt-3">
+                <div class="col-sm-12 border-top border-bottom fs-4" align="center">
+                    <p>O cubo Mágico é um dos quebra-cabeças mais incríveis do mundo. Todo colorido e tridimensional, 
+                        que pode ser misturado em 43 quintilhões de posições diferentes sendo apenas 1 a correta. Um 
+                        desafio que intrigou diversas gerações e até hoje é considerado o brinquedo mais vendido do mundo.</p>
+                    <p>Agora você pode estar pensando que, com tantas - ou praticamente infinitas - possibilidades, 
+                        resolver um Cubo Mágico deve ser uma tarefa praticamente impossível. E você está quase certo. 
+                        Apenas "resolver um cubo" na tentativa e erro de fato é algo completamente improvável, por isso 
+                        é muito importante que você aprenda a técnica de solução.</p>
+                    <p>Resolver o Cubo Mágico nada mais é do que seguir uma receita. São 8 passos divididos em algumas fórmulas 
+                        que são muito mais simples do que você imagina. </p>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-sm-12" align="center">                    
+                    <p class="border-top border-bottom border-info-subtle bg-primary-subtle"><strong class="fs-3">1° PASSO: 
+                            PREPARAR A CRUZ</strong><br/><span class="fs-5">Objetivo do primeiro passo é preparar a cruz do 
+                                branco, ou seja, posicionar 4 meios brancos ao redor do centro amarelo.</span></p>
+                    <img th:src="@{/imagens/passo1.webp}"/>
+                    <p>Vídeo para auxiliar no 1° passo: <a href="https://youtu.be/CNHOWsQes7w">https://youtu.be/CNHOWsQes7w</a></p>                    
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-sm-12" align="center">                    
+                    <p class="border-top border-bottom border-info-subtle bg-primary-subtle"><strong class="fs-3">2° PASSO: 
+                            FINALIZAR A CRUZ</strong><br/><span class="fs-5">Este é o passo mais simples da solução. Nós 
+                                vamos levar todos os meios brancos que preparamos ao redor do centro amarelo (no 1º passo) 
+                                para a base do cubo, ao redor do centro branco, finalizando assim a cruz inicial.</span></p>
+                    <img th:src="@{/imagens/passo2.webp}"/>
+                    <p>Vídeo para auxiliar no 2° passo: <a href="https://youtu.be/jVciPHWqIpQ">https://youtu.be/jVciPHWqIpQ</a></p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-sm-12" align="center">                    
+                    <p class="border-top border-bottom border-info-subtle bg-primary-subtle"><strong class="fs-3">3° PASSO: 
+                            PRIMEIRA CAMADA</strong><br/><span class="fs-5">Agora nós vamos finalizar toda a camada branca, 
+                                ou seja, montar as 4 quinas brancas na base do cubo ao redor da cruz que fizemos no 2º passo.</span></p>
+                    <img th:src="@{/imagens/passo3.webp}"/>
+                    <p>Vídeo para auxiliar no 3° passo: <a href="https://youtu.be/tpnbwqHFyCw">https://youtu.be/tpnbwqHFyCw</a></p>                
+            </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-sm-12" align="center">
+                    <p class="border-top border-bottom border-info-subtle bg-primary-subtle"><strong class="fs-3">4° PASSO: 
+                            SEGUNDA CAMADA</strong><br/><span class="fs-5">Neste passo nós iremos finalizar a camada do meio 
+                                do cubo, deixando assim as 2 primeiras camadas prontas faltando apenas o lado amarelo. A 
+                                partir daqui tudo fica mais fácil.</span></p>
+                    <img th:src="@{/imagens/passo4.webp}"/>
+                    <p>Vídeo para auxiliar no 4° passo: <a href="https://youtu.be/uB1szuiQETQ">https://youtu.be/uB1szuiQETQ</a></p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-sm-12" align="center">
+                    <p class="border-top border-bottom border-info-subtle bg-primary-subtle"><strong class="fs-3">5° PASSO: 
+                            CRUZ AMARELA</strong><br/><span class="fs-5">Estamos chegando no final! Agora neste passo iremos 
+                                solucionar a cruz o lado amarelo utilizando apenas 1 fórmula de 6 movimentos.</span></p>
+                    <img th:src="@{/imagens/passo5.webp}"/>
+                    <p>Vídeo para auxiliar no 5° passo: <a href="https://youtu.be/4gzlzxbam4Y">https://youtu.be/4gzlzxbam4Y</a></p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-sm-12" align="center">
+                    <p class="border-top border-bottom border-info-subtle bg-primary-subtle"><strong class="fs-3">6° PASSO: 
+                            FACE AMARELA</strong><br/><span class="fs-5">Neste passo nós vamos finalizar todo o lado amarelo 
+                                do cubo, restando apenas as cores das laterais do terceiro andar do nosso "prédio".</span></p>
+                    <img th:src="@{/imagens/passo6.webp}"/>
+                    <p>Vídeo para auxiliar no 6° passo: <a href="https://youtu.be/JsS-619lLz0">https://youtu.be/JsS-619lLz0</a></p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-sm-12" align="center">
+                    <p class="border-top border-bottom border-info-subtle bg-primary-subtle"><strong class="fs-3">7° PASSO: 
+                            FINALIZAR AS QUINAS</strong><br/><span class="fs-5">Faltam apenas 2 passos! Agora, no passo 7, 
+                                nós iremos finalizar todas as quinas da última camada utilizando apenas 1 fórmula, faltando 
+                                assim apenas os meios que serão solucionados no último passo.</span></p>
+                    <img th:src="@{/imagens/passo7.webp}"/>
+                    <p>Vídeo para auxiliar no 7° passo: <a href="https://youtu.be/mSHSU84BTwI">https://youtu.be/mSHSU84BTwI</a></p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-sm-12" align="center">
+                    <p class="border-top border-bottom border-info-subtle bg-primary-subtle"><strong class="fs-3">8° PASSO: 
+                            FINALIZAR OS MEIOS</strong><br/><span class="fs-5">Finalmente o último passo! O objetivo aqui é 
+                                finalizar os meios da última camada utilizando 1 fórmula com 2 variações, super simples de 
+                                aplicar.</span></p>
+                    <img th:src="@{/imagens/passo8.webp}"/>
+                    <p>Vídeo para auxiliar no 8° passo: <a href="https://youtu.be/RAvMGnXazlc">https://youtu.be/RAvMGnXazlc</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <div class="col-sm-12">
+                    <a th:href="@{/pagina-principal}"><button type="submit" class="btn btn-dark mb-2"
+                    th:href="@{/pagina-principal}">Voltar</button></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
