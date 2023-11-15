@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Peças do cubo</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" 
+              integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"/>
+    </head>
+    <body>
+        <div class="container-fluid text-bg-secondary">
+            <div class="row border-bottom">
+                <div class="col-sm-12" align="center">
+                    <h1><strong>PEÇAS DO CUBO</strong></h1>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-sm-12 border-top border-bottom fs-4" align="center">
+                    <p>O Cubo Mágico possui 3 tipos deiferentes de peças, sendo que cada uma ocupa uma posiçaõ específica
+                    do cubo. É realmente importante saber identicar quais são as peças antes de começar a estudar
+                    os métodos de solução do Cubo Mágico.</p>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-sm-4 border border-info rounded border-opacity-50" align="center">
+                    <img th:src="@{/imagens/centros.webp}"/>
+                    <h2>Centros</h2>
+                    <hr/>
+                    <p>São as 6 peças centrais do cubo. Elas fixas e indicam a cor da face. Por exemplo, o centro 
+                        amarelo indica que a face deverá ser toda amarela. Importante lembrar que não é possível 
+                        trocar os centros de lugar.</p>
+                </div>
+                <div class="col-sm-4 border border-info rounded border-opacity-50" align="center">
+                    <img th:src="@{/imagens/meios.webp}"/>
+                    <h2>Meios</h2>
+                    <hr/>
+                    <p>O cubo possui 12 meios, que são as peças que têm 2 cores. Vale lembrar que não é possível 
+                        posicionar um meio no lugar de um centro ou de uma quina. Isso seria fisicamente impossível.</p>
+                </div>
+                <div class="col-sm-4 border border-info rounded border-opacity-50" align="center">
+                    <img th:src="@{/imagens/quinas.webp}"/>
+                    <h2>Quinas</h2>
+                    <hr/>
+                    <p>Temos um total de 8 quinas, que são as peças que têm 3 cores e ficam nas pontas do cubo. Da mesma 
+                        forma, não seria possível posicionar uma quina no lugar de um centro ou de um meio.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <div class="col-sm-12">
+                    <a th:href="@{/pagina-principal}"><button type="submit" class="btn btn-dark mb-2"
+                    th:href="@{/pagina-principal}">Voltar</button></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

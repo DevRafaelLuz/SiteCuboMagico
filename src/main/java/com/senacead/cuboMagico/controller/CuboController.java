@@ -19,4 +19,8 @@ public class CuboController {
     public String exibePatterns() {
         return "patterns";
     }
+    @GetMapping("/pecas")
+    public String exibePecasCubo() {
+        return "pecasCubo";
+    }
 }
