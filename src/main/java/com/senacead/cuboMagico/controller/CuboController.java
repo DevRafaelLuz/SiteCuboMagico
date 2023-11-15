@@ -1,10 +1,15 @@
 package com.senacead.cuboMagico.controller;
 
+import com.senacead.cuboMagico.model.Usuario;
+import java.util.ArrayList;
+import java.util.List;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
-public class CuboController {
+public class CuboController {   
     @GetMapping("/pagina-principal")
     public String mostrarPagPrincipal() {
         return "index";
@@ -24,7 +29,7 @@ public class CuboController {
         return "pecasCubo";
     }
     
-    @GetMapping("metodo-basico")
+    @GetMapping("/metodo-basico")
     public String exibeMetodo() {
         return "metodoBasico";
     }
