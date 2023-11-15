@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Movimentos</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" 
+              integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"/>
+    </head>
+    <body>
+        <div class="container-fluid text-bg-secondary">
+            <div class="row border-bottom">
+                <div class="col-sm-12" align="center">
+                    <h1><strong>MOVIMENTOS BÁSICOS</strong></h1>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-sm-12 border rounded-pill bg-body-secondary" align="center">
+                    <p>Para solucionar o Cubo Mágico nós vamos utilizar algumas fórmulas, que são sequencias de 
+                        <br/>movimentos que podem ser escritos (traduzidos) com letras. Parece muito complexo, 
+                        <br/>mas é extremamente simples e intuitivo.</p>
+                    <p>Cada lado do cubo é representado pela sua inicial em inglês. Se a letra estiver sozinha 
+                        <br/>significa que o movimento é no sentido horário. Se estiver acompanhada de um apóstrofo, 
+                        <br/>significa que é no sentido anti-horário. E se for seguida do número 2, significa que é 
+                        <br/>um movimento duplo.</p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-sm-12" align="center">
+                    <img th:src="@{imagens/movimentosPecas.jpg}"/>
+                    <hr/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6" align="center">
+                    <h1><strong>R</strong></h1>
+                    <p>Right / direita horário.</p>
+                    <h1><strong>R'</strong></h1>
+                    <p>Right / direita anti-horário.</p>
+                    <hr/>
+                    <h1><strong>F</strong></h1>
+                    <p>Front / face horário.</p>
+                    <h1><strong>F'</strong></h1>
+                    <p>Front / face anti-horário.</p>
+                    <hr/>
+                    <h1><strong>D</strong></h1>
+                    <p>Down / base horário.</p>
+                    <h1><strong>D'</strong></h1>
+                    <p>Down / base anti-horário.</p>
+                </div>
+                <div class="col-sm-6" align="center"> 
+                    <h1><strong>L</strong></h1>
+                    <p>Left / esquerda horário.</p>
+                    <h1><strong>L'</strong></h1>
+                    <p>Left / esquerda anti-horário.</p>
+                    <hr/>
+                    <h1><strong>B</strong></h1>
+                    <p>Back / atrás horário.</p>
+                    <h1><strong>B'</strong></h1>
+                    <p>Back / atrás anti-horário.</p>
+                    <hr/>
+                    <h1><strong>U</strong></h1>
+                    <p>Up / topo horário.</p>
+                    <h1><strong>U'</strong></h1>
+                    <p>Up / topo anti-horário.</p>
+                </div>
+            </div>
+            <br/>
+            <p class="text-danger border-danger border-top border-bottom">OBS: Se houver um número ao lado da letra, significa a quantidade de vezes que
+                a camada deve ser rotacionada.</p>            
+        </div>
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <div class="col-sm-12">
+                    <a th:href="@{/pagina-principal}"><button type="submit" class="btn btn-dark mb-2"
+                    th:href="@{/pagina-principal}">Voltar</button></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

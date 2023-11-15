@@ -9,4 +9,9 @@ public class CuboController {
     public String mostrarPagPrincipal() {
         return "index";
     }
+    
+    @GetMapping("/movimentos")
+    public String exibeMovimentos() {
+        return "movimentos";
+    }
 }
