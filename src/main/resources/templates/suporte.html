@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Suporte</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" 
+              integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"/>
+    </head>
+    <body>
+        <div class="container-fluid text-bg-secondary">
+            <div class="row border-bottom">
+                <div class="col-sm-12" align="center">
+                    <h1><strong>SUPORTE</strong></h1>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>Esqueva aqui sua mensagem:</h2>                  
+                    <form>
+                        <div>
+                            <textarea id="msg" rows="18" cols="150" required></textarea>
+                        </div>
+                        <div align="center">
+                            <a th:href="@{/pagina-principal}"><button class="btn btn-lg btn-success ps-5 px-5"
+                                th:href="@{/pagina-principal}" onclick="exibirMensagem()">Enviar</button></a>
+                        </div>                        
+                    </form>                                        
+                </div>
+            </div>
+        </div>   
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <div class="col-sm-12 fixed-bottom">
+                    <a th:href="@{/pagina-principal}"><button type="submit" class="btn btn-dark mb-2"
+                        th:href="@{/pagina-principal}">Voltar</button></a>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            function exibirMensagem() {
+                alert("Feedback enviado com sucesso");
+            }
+        </script>
+    </body>
+</html>

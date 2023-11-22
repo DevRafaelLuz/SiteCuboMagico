@@ -17,15 +17,12 @@
             </div>
             
             <!-- Menu com links -->
-            <div class="row mt-2 border">
-                <div class="col-sm-4" align="end">                   
-                    <a class="link-underline-opacity-0 link-dark" th:href="@{/}">Início</a>                                  
+            <div class="row mt-2 border">                
+                <div class="col-sm-6" align="end">
+                    <a class="link-underline-opacity-0 link-dark" th:href="@{/curiosidades}">História e Curiosidades</a>
                 </div>
-                <div class="col-sm-4" align="center">
-                    <a class="link-underline-opacity-0 link-dark" th:href="@{/}">Curiosidades</a>
-                </div>
-                <div class="col-sm-4">
-                    <a class="link-underline-opacity-0 link-dark" th:href="@{/}">Suporte</a>
+                <div class="col-sm-6">
+                    <a class="link-underline-opacity-0 link-dark" th:href="@{/suporte}">Suporte</a>
                 </div>
             </div>
         </div>
@@ -72,10 +69,15 @@
                         <p>Nome: <input type="text" id="nome" class="px-2" required/></p>
                         <p>Telefone: <input type="tel" id="tel" required/></p>
                         <p>E-mail: <input type="email" id="email" class="px-2" required/></p>
-                        <button class="btn btn-dark ps-5 px-5 ms-5">Cadastrar</button>
+                        <button class="btn btn-dark ps-5 px-5 ms-5" onclick="exibirMensagem()">Cadastrar</button>
                     </form>
                 </div>
             </div>
         </div>
+        <script type="text/javascript">
+            function exibirMensagem() {
+                alert("Cadastro realizado com sucesso");
+            }
+        </script>
     </body>
 </html>

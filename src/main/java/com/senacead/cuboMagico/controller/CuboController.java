@@ -33,4 +33,14 @@ public class CuboController {
     public String exibeMetodo() {
         return "metodoBasico";
     }
+    
+    @GetMapping("/suporte")
+    public String enviaSuporte() {
+        return "suporte";
+    }
+    
+    @GetMapping("/curiosidades")
+    public String exibeCuriosidades() {
+        return "curiosidades";
+    }
 }
