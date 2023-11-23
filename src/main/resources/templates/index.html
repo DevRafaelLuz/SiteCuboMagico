@@ -65,10 +65,10 @@
                         todas as novidades<br/>ou atualizações sobre os<br/>puzzles</p>
                 </div>
                 <div class="col-sm-8" align="center">
-                    <form>
-                        <p>Nome: <input type="text" id="nome" class="px-2" required/></p>
-                        <p>Telefone: <input type="tel" id="tel" required/></p>
-                        <p>E-mail: <input type="email" id="email" class="px-2" required/></p>
+                    <form th:action="@{/registrar}" th:object="${usuario}" method="post">
+                        <p>Nome: <input type="text" th:field="${usuario.nome}" class="px-2"/></p>
+                        <p>Telefone: <input type="tel" id="txtTelefone" th:field="${usuario.telefone}"/></p>
+                        <p>E-mail: <input type="email" th:field="${usuario.email}" class="px-2"/></p>
                         <button class="btn btn-dark ps-5 px-5 ms-5" onclick="exibirMensagem()">Cadastrar</button>
                     </form>
                 </div>

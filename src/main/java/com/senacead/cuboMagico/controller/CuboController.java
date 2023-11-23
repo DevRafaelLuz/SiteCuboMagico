@@ -1,17 +1,22 @@
 package com.senacead.cuboMagico.controller;
 
 import com.senacead.cuboMagico.model.Usuario;
-import java.util.ArrayList;
-import java.util.List;
+import com.senacead.cuboMagico.service.UsuarioService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class CuboController {   
+    @Autowired
+    UsuarioService usuarioService;
+    
     @GetMapping("/pagina-principal")
-    public String mostrarPagPrincipal() {
+    public String mostrarPagPrincipal(Model model) {
+        model.addAttribute("usuario", new Usuario());
         return "index";
     }
     
@@ -42,5 +47,11 @@ public class CuboController {
     @GetMapping("/curiosidades")
     public String exibeCuriosidades() {
         return "curiosidades";
+    }
+    
+    @PostMapping("/registrar")
+    public String recebeCadastro(@ModelAttribute Usuario usuario) {       
+        usuarioService.criar(usuario);
+        return "redirect:/pagina-principal";
     }
 }
